@@ -417,3 +417,26 @@ p {
     80% { color: #c20fb0; }
     100% { color: #e52e42; }
 }
+
+.love-text {
+    font-family: 'Cherry Swash', cursive;
+    font-size: 1.8rem;
+    color: #ffe6fa;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    animation: fadeInLove 2s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInLove {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
