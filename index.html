@@ -1,43 +1,40 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Te Amo Cynthia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Te Amo Cynthia</title>  <!-- Fuentes -->  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap" rel="stylesheet" />  <!-- Estilos -->  <link rel="stylesheet" href="./css/styles.css" />  <style>
+    .love-text {
+      font-family: 'Cherry Swash', cursive !important;
+      font-size: 1.8rem;
+      color: #ffe6fa;
+      text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+      margin-top: 20px;
+      letter-spacing: 1px;
+      text-align: center;
+      animation: fadeInLove 2s ease-out forwards;
+      opacity: 0;
+    }
 
-    <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap" rel="stylesheet" />
-
-    <!-- Estilos -->
-    <link rel="stylesheet" href="./css/styles.css" />
-</head>
+    @keyframes fadeInLove {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style></head>
 <body>
-    <div class="pulse-container">
-        <div class="pulse"></div>
-        <div class="pulse"></div>
-        <div class="pulse"></div>
-    </div>
-
-    <div class="hearts-container" id="heartsContainer"></div>
-    <div class="particles" id="particlesContainer"></div>
-    <div id="matrix-container" class="matrix-container"></div>
-
-    <div class="message" id="messageContainer">
-       <h1>MYLOB <br><span class="big-heart">❤</span> <br> CYNTHIA</h1>
-       <p class="love-text">DIME QUIÉN TE VA A MORDER COMO YO</p>
-       <button class="secret-btn" id="secretButton">GRRR..."click"</button>
-    </div>
-
-    <img src="./assets/cat-meme.gif" alt="Mi princesa" class="hidden-image" id="hiddenImage" />
-
-    <audio id="romanticAudio" loop>
-        <source src="./assets/audio.mp3" type="audio/mpeg" />
-    </audio>
-
-    <div id="paint-effect" class="paint-effect"></div>
-
-    <!-- Scripts -->
-    <script src="./js/script.js"></script>
+  <div class="pulse-container">
+    <div class="pulse"></div>
+    <div class="pulse"></div>
+    <div class="pulse"></div>
+  </div>  <div class="hearts-container" id="heartsContainer"></div>
+  <div class="particles" id="particlesContainer"></div>
+  <div id="matrix-container" class="matrix-container"></div>  <div class="message" id="messageContainer">
+    <h1>MYLOB <br><span class="big-heart">❤</span> <br> CYNTHIA</h1>
+    <p class="love-text">DIME QUIÉN TE VA A MORDER COMO YO</p>
+    <button class="secret-btn" id="secretButton">GRRR..."click"</button>
+  </div>  <img src="./assets/cat-meme.gif" alt="Mi princesa" class="hidden-image" id="hiddenImage" />  <audio id="romanticAudio" loop>
+    <source src="./assets/audio.mp3" type="audio/mpeg" />
+  </audio>  <div id="paint-effect" class="paint-effect"></div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
